@@ -1,19 +1,3 @@
-# 复现性与代码结构
-
-本章详细说明如何复现实验结果并理解代码库结构。
-
----
-
-## 代码仓库
-
-```bash
-# 克隆代码仓库
-git clone https://github.com/your-username/transformer-from-scratch.git
-cd transformer-from-scratch
-```
-
----
-
 ## 依赖与环境配置
 
 ### 安装依赖
