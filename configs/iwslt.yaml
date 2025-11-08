@@ -1,0 +1,32 @@
+# IWSLT专用配置
+model:
+  d_model: 256
+  num_heads: 8
+  num_layers: 3
+  d_ff: 1024
+  dropout: 0.1
+  max_seq_length: 128
+
+training:
+  batch_size: 32
+  num_epochs: 30
+  learning_rate: 0.0003
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  scheduler_step_size: 20
+  scheduler_gamma: 0.5
+
+data:
+  path: "data/iwslt2017"
+  vocab_size: 10000
+  use_iwslt: true
+  src_lang: "en"
+  tgt_lang: "de"
+
+experiment:
+  seed: 42
+  data_dir: "data/iwslt2017"
+  results_dir: "results_iwslt"
+  checkpoints_dir: "checkpoints_iwslt"
+  log_interval: 100
+  save_interval: 10
