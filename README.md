@@ -85,5 +85,3 @@ transformer-from-scratch/
 > **表 3.** 实验运行时间预估
 
 ---
-
-此设置确保我们的 Transformer 实现和消融实验结果在不同硬件配置下具有完全可复现性。
